@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="img/logo45.gif">
+  <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  <title>SSN Cube Open</title>
+
+  <script>
+//insert this in your jquery
+//control the resizing of menu and go down the content in the correct position
+
+    $("#header-nav").resize(function () {
+        $('#godown').height($("#header-nav").height() + 10);
+    });
+
+    if ($("#header-nav").height() > $('#godown').height()) $('#godown').height($("#header-nav").height() + 10);
+
+</script>
+</head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default pos">
+      
+        <div class="navbar-header">
+
+          <a href="index.html" class="pull-left visible-md visible-sm visible-lg">
+            <div id="logo-img"></div>
+          </a>
+
+          <div class="navbar-brand">
+              <a href="index.html"><h1>SSN CUBE OPEN</h1></a>
+          </div>
+            <button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>         
+        </div>
+
+        <div class="container">
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+          <li>
+              <a href="#about" class=" text-center">About</a>
+            </li>   
+            <li>
+              <a href="#" class=" text-center">Events</a>
+            </li>   
+            <li>
+              <a href="#" class=" text-center">Schedule</a>
+            </li>   
+            <li>
+              <a href="#" class=" text-center">Venue</a>
+            </li>  
+            <li>
+              <a href="#" class=" text-center">Registration</a>
+            </li>  
+            <li>
+              <a href="#" class=" text-center">Sponsors</a>
+            </li>   
+            <li>
+              <a href="#" class=" text-center">Contact US</a>
+            </li>  
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div>
+    </nav>
+  </header>
+
+  <div class="godown-60" id="godown"></div>
+
+  <div id="main-content" class="container">
+  <center>
+    <img id="ssn-logo" src="img/ssnlogo.png">
+    <div id="cname" class="text-center">COLLEGE OF ENGINEERING</div>
+    <div id="mathdp" class="text-center">DEPARTMENT OF MATHEMATICS</div>
+    <div id="mathcl" class="text-center">SSN MATH CLUB</div>
+    <div id="org" class="text-center">ORGANIZES</div>
+    <div id="cube-logo"></div>
+    <div id="sco" class="text-center">SSN CUBE OPEN 2016</div>
+  </center>
+  </div>
+
+  <hr class="text-center">
+
+  <div id="about" class="container">
+  <center>
+  <h2>About the Competition</h2>
+  <p><br><br>SSN CUBE OPEN 2016 is organised by Department of Mathematics, <br>SSN College of Engineering , Chennai and will be held on August 05 & 06 , 2016. <br><br>The competition is open to all competitors of all nationalities. No experience in WCA competitions is necessary, but competitors should
+  be familiar with the WCA <a class="WCAreg" target="_blank" href="https://worldcubeassociation.org/regulations" style="color: #337ab7;"><u>regulations</u></a>.<br><br><br>
+  </p>
+  </center>
+  </div>
+
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
